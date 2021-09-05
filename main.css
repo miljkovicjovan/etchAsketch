@@ -64,8 +64,14 @@ body {
 }
 
 /********** CANVAS *********/
-canvas {
-    background-color: white;
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 68vh;
+    width: 60vw;
+    margin: 0 auto;
+    background: white;
+    border-radius: 1em;
 }
 
 /********** BOTTOM *********/
