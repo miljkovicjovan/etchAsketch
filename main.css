@@ -1,0 +1,105 @@
+/***** FONTS *****/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/********** HTML AND BODY *********/
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/********** OUTTER BODY *********/
+#outter-body {
+    height: 100%;
+    width: 1000px;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #90070c;
+}
+
+/********** INNER BODY *********/
+#inner-body {
+    height: 95%;
+    width: 95%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #901d21;
+}
+
+/********** HEADING *********/
+#heading {
+    color: rgb(255, 196, 0);
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;   
+}
+#heading h2 {
+    font-style: italic;
+    font-size: 1.3rem;
+}
+#heading h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+}
+#heading h3 {
+    font-weight: bolder;
+}
+
+#heading i {
+    font-size: 3rem;
+    border: 1px solid rgb(255, 196, 0);
+    border-radius: 5px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+/********** CANVAS *********/
+canvas {
+    background-color: white;
+}
+
+/********** BOTTOM *********/
+#bottom {
+    width: 94%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 50%;
+}
+#dot {
+    height: 55px;
+    width: 55px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#bottom h2 {
+    color: rgba(173, 163, 163, 0.514);
+}
+#bottom h2 a {
+    color: rgba(173, 163, 163, 0.514);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+#bottom h2 a:hover {
+    color: rgba(173, 163, 163, 0.753);
+}
