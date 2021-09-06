@@ -66,12 +66,23 @@ body {
 /********** CANVAS *********/
 #container {
     display: inline-grid;
-    grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);
+    grid-template-columns: repeat(32, 2fr);
+    grid-template-rows: repeat(32, 2fr);
     height: 68vh;
-    width: 60vw;
+    width: 62vw;
     margin: 0 auto;
-    background: white;
+}
+
+/* square before hover */
+.square {
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* square after hover */
+.color {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
 }
 
 /********** BOTTOM *********/
