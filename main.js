@@ -1,9 +1,9 @@
 let grid =  document.getElementById('container');
 
 // the function that creates the grid and add each "square" spot
-createGrid = () => {
+createGrid = (cells) => {
     // appending in each grid box a single square (32x32=1024)
-    for (let i = 0; i < 1024; i++) { // this is the default value
+    for (let i = 0; i < cells * cells; i++) { // this is the default value
       const div = document.createElement("div");
       div.classList.add("square"); // add the square styling
       grid.appendChild(div); // append to each spot
@@ -18,7 +18,7 @@ square.addEventListener("mouseover", function(event) {
 });
 
 // create the grid and start the program
-createGrid();
+createGrid(32);
 
 
 // -------- SHAKE FUNCTIONALITY --------
@@ -26,5 +26,19 @@ let shake = document.getElementById('shake');
 
 shake.addEventListener('click', e => {
   grid.innerHTML = ""; // empty the grid
-  createGrid(); // call the function as in default
+  grid.style.setProperty("grid-template-columns", `repeat(32, 2fr)`); // change the styling of the grid
+  grid.style.setProperty("grid-template-rows", `repeat(32, 2fr)`);
+  createGrid(32); // call the function as in default
+});
+
+
+// -------- RESIZE FUNCTIONALITY --------
+let resize = document.getElementById('resize');
+
+resize.addEventListener('click', e => {
+  grid.innerHTML = ""; // empty the grid
+  let cells  = prompt("How many cells do you want per side?"); // promt the user for input
+  grid.style.setProperty("grid-template-columns", `repeat(${cells}, 2fr)`); // change the styling of the grid
+  grid.style.setProperty("grid-template-rows", `repeat(${cells}, 2fr)`);
+  createGrid(cells);
 });

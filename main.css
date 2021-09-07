@@ -17,31 +17,42 @@ body {
     justify-content: space-between;
 }
 
-/********** RIGHT CONT *********/
-.right-cont {
-    width: 15%;
-}
-
 /********** LEFT CONT *********/
 .left-cont {
-    width: 15%;
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: auto;
 }
 
-.shake button {
+/* text cont */
+.text-cont {
+    text-align: center;
+}
+.text-cont h1 {
+    font-size: 2.3rem;
+}
+.text-cont p {
+    font-size: 1.2rem;
+}
+
+/* shake button */
+.btn {
+    margin-top: 6%;
+}
+.btn button {
     color: rgb(255, 196, 0);
     background-color: #901d21;
     border: 1px solid #90070c;
     border-radius: 4px;
-    padding: 0 15px;
+    padding: 0 20px;
     cursor: pointer;
-    height:32px;
-    font-size:18px;
+    height: 42px;
+    font-size: 22px;
     transition: all 0.2s ease-in-out;
 }
-.shake button:hover {
+.btn button:hover {
     box-shadow: 1px 1px rgb(255, 196, 0), 2px 2px rgb(255, 196, 0), 3px 3px rgb(255, 196, 0);
     transform: translateX(-3px);
 }
