@@ -19,3 +19,12 @@ square.addEventListener("mouseover", function(event) {
 
 // create the grid and start the program
 createGrid();
+
+
+// -------- SHAKE FUNCTIONALITY --------
+let shake = document.getElementById('shake');
+
+shake.addEventListener('click', e => {
+  grid.innerHTML = ""; // empty the grid
+  createGrid(); // call the function as in default
+});

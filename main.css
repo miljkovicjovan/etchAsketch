@@ -11,12 +11,46 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+/********** RIGHT CONT *********/
+.right-cont {
+    width: 15%;
+}
+
+/********** LEFT CONT *********/
+.left-cont {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shake button {
+    color: rgb(255, 196, 0);
+    background-color: #901d21;
+    border: 1px solid #90070c;
+    border-radius: 4px;
+    padding: 0 15px;
+    cursor: pointer;
+    height:32px;
+    font-size:18px;
+    transition: all 0.2s ease-in-out;
+}
+.shake button:hover {
+    box-shadow: 1px 1px rgb(255, 196, 0), 2px 2px rgb(255, 196, 0), 3px 3px rgb(255, 196, 0);
+    transform: translateX(-3px);
+}
+
 /********** OUTTER BODY *********/
 #outter-body {
     height: 100%;
     width: 1000px;
     border-radius: 15px;
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
