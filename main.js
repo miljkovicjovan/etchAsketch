@@ -42,3 +42,23 @@ resize.addEventListener('click', e => {
   grid.style.setProperty("grid-template-rows", `repeat(${cells}, 2fr)`);
   createGrid(cells);
 });
+
+
+// -------- DROPDOWN MENU --------
+// to open the dropdown menu
+function openDropdown() {
+  document.getElementById('myDropdown').classList.toggle('show'); //change the styling to the show class 
+}
+
+// when user clicks outside of the dropdown menu -> collapse it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName('dropdown-content');
+    for (let i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
