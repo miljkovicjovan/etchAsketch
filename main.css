@@ -129,25 +129,30 @@ body {
 
 /********** CANVAS *********/
 #container {
-    display: inline-grid;
-    grid-template-columns: repeat(32, 2fr);
-    grid-template-rows: repeat(32, 2fr);
     height: 68vh;
     width: 62vw;
     margin: 0 auto;
 }
-
-/* square before hover */
-.square {
-    background-color: white;
-    border: 1px solid black;
+#grid {
+    margin: auto;
+    text-align: center;
+    background: white;
+    width: 62.8%;
 }
-
-/* square after hover */
-.color {
-    background-color: rgb(0, 0, 0);
-    border: 1px solid black;
+.grid-cell {
+    background: #eee;
+    display: inline-block;
+    margin: 0;
+    line-height: 0;
 }
+.grid-cell.hovered {
+    background-color: black;
+}
+.row {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
 
 /********** BOTTOM *********/
 #bottom {
